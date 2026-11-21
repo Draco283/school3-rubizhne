@@ -4,6 +4,22 @@
 (function () {
   'use strict';
 
+  /* ---------- Netlify Identity: перекидовання на /admin з токеном ---------- */
+  (function redirectToAdminWithIdentityToken() {
+    var tokens = ['invite_token', 'confirmation_token', 'reset_password_token'];
+    var found = null;
+    for (var i = 0; i < tokens.length && !found; i++) {
+      var name = tokens[i];
+      var m = location.search.match(new RegExp('[?&]' + name + '=([^&#]+)'));
+      if (m) { found = name + '=' + decodeURIComponent(m[1]); continue; }
+      var hm = location.hash.match(new RegExp('(?:^|[#&])' + name + '=([^&#]+)'));
+      if (hm) found = name + '=' + decodeURIComponent(hm[1]);
+    }
+    if (found && (location.pathname !== '/admin/' && location.pathname !== '/admin')) {
+      location.replace('/admin/#' + found);
+    }
+  })();
+
   var page = document.body.dataset.page || 'home';
 
   /* ---------- preloader ---------- */
