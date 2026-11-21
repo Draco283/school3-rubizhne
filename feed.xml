@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Новини — Гімназія №3 міста Рубіжного</title>
+    <link>https://school3-rubizhne.netlify.app/news.html</link>
+    <description>Останні новини, події та оголошення Гімназії №3 міста Рубіжного.</description>
+    <language>uk</language>
+    <atom:link href="https://school3-rubizhne.netlify.app/feed.xml" rel="self" type="application/rss+xml"/>
+    <lastBuildDate>Sat, 21 Nov 2026 17:07:34 GMT</lastBuildDate>
+    <item>
+      <title>Тиждень безпечного інтернету: що варто знати</title>
+      <link>https://school3-rubizhne.netlify.app/news-2026-11-20-tyzhden-bezpechnoho-internetu.html</link>
+      <guid isPermaLink="true">https://school3-rubizhne.netlify.app/news-2026-11-20-tyzhden-bezpechnoho-internetu.html</guid>
+      <pubDate>Fri, 20 Nov 2026 10:00:00 GMT</pubDate>
+      <description>Як захистити акаунти, не потрапити на фейки та що робити, якщо онлайн-спілкування стало небезпечним. Добірка порад для учнів і батьків.</description>
+      <enclosure url="https://school3-rubizhne.netlify.app/assets/img/bullying.jpg" type="image/jpeg"/>
+    </item>
+    <item>
+      <title>День захисників і захисниць України</title>
+      <link>https://school3-rubizhne.netlify.app/news-2026-10-14-den-zakhysnykiv.html</link>
+      <guid isPermaLink="true">https://school3-rubizhne.netlify.app/news-2026-10-14-den-zakhysnykiv.html</guid>
+      <pubDate>Wed, 14 Oct 2026 09:00:00 GMT</pubDate>
+      <description>У гімназії відбулися тематичні уроки, виставка дитячих робіт і хвилина мовчання. Дякуємо тим, хто боронить нашу свободу.</description>
+      <enclosure url="https://school3-rubizhne.netlify.app/assets/img/students.jpg" type="image/jpeg"/>
+    </item>
+    <item>
+      <title>Перший дзвоник: стартує 2026/2027 навчальний рік</title>
+      <link>https://school3-rubizhne.netlify.app/news-2026-09-01-pershyi-dzvinok.html</link>
+      <guid isPermaLink="true">https://school3-rubizhne.netlify.app/news-2026-09-01-pershyi-dzvinok.html</guid>
+      <pubDate>Tue, 01 Sep 2026 09:00:00 GMT</pubDate>
+      <description>1 вересня гімназія відкрила двері для учнів, батьків і вчителів. Попри всі виклики, ми знову разом — у класах і онлайн.</description>
+      <enclosure url="https://school3-rubizhne.netlify.app/assets/img/school-2.jpg" type="image/jpeg"/>
+    </item>
+  </channel>
+</rss>

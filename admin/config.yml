@@ -1,0 +1,74 @@
+backend:
+  name: git-gateway
+  branch: main
+
+# Український інтерфейс редакції
+locale: uk
+
+# Чернетка → перевірка → публікація
+publish_mode: editorial_workflow
+
+# Адреса сайту. Якщо Netlify-адреса інша — змініть тут і в src/layout.js
+site_url: https://school3-rubizhne.netlify.app
+display_url: https://school3-rubizhne.netlify.app
+logo_url: https://school3-rubizhne.netlify.app/assets/img/gerb.png
+
+media_folder: "assets/img/news"
+public_folder: "/assets/img/news"
+
+collections:
+  - name: news
+    label: Новини
+    label_singular: Новина
+    description: Новини, події та оголошення гімназії
+    folder: content/news
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    summary: "{{title}} — {{date}}"
+    sortable_fields: [date, title]
+    fields:
+      - label: Заголовок
+        name: title
+        widget: string
+        hint: Короткий і зрозумілий заголовок новини
+
+      - label: Дата
+        name: date
+        widget: datetime
+        date_format: "YYYY-MM-DD"
+        time_format: false
+        format: "YYYY-MM-DD"
+
+      - label: Короткий опис
+        name: excerpt
+        widget: text
+        required: false
+        hint: 1–2 речення, які показуються на головній та в списку новин
+
+      - label: Обкладинка
+        name: cover
+        widget: image
+        required: false
+        hint: Горизонтальне фото, бажано 1600×900 або більше
+
+      - label: Автор
+        name: author
+        widget: string
+        default: Редакція гімназії
+
+      - label: Теги
+        name: tags
+        widget: list
+        required: false
+        default: ["Новини"]
+        hint: Наприклад — Події, Спорт, Навчання, Безпека
+
+      - label: Приховати з сайту
+        name: draft
+        widget: boolean
+        default: false
+        hint: Позначте, якщо новину не треба показувати на сайті
+
+      - label: Текст новини
+        name: body
+        widget: markdown

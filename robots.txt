@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+Sitemap: https://school3-rubizhne.netlify.app/sitemap.xml

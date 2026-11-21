@@ -1,0 +1,17 @@
+{
+  "name": "school3-rubizhne",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Сайт Гімназії №3 міста Рубіжного Луганської області",
+  "scripts": {
+    "build": "node build.js",
+    "serve": "node server.js"
+  },
+  "dependencies": {
+    "gray-matter": "^4.0.3",
+    "markdown-it": "^14.1.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
